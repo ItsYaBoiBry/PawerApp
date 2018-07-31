@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#F5F5F5</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="splash_red">#E54149</color>
+    <color name="pawer_red">#E54149</color>
+    <color name="pawer_grey">#969696</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#121212</color>
+    <color name="blackalpha">#80121212</color>
+    <color name="ageBlue">#4E91FD</color>
+    <color name="ageGreen">#8BBE2B</color>
+    <color name="transparentbg">#CCFF0000</color>
+</resources>

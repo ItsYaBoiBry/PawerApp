@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.Settings">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#FFFFFF"
+            android:layout_marginBottom="1dp"
+            android:drawableRight="@drawable/view_more_img"
+            android:drawablePadding="5dp"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:text="Top Categories"/>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#FFFFFF"
+            android:layout_marginBottom="1dp"
+            android:drawableRight="@drawable/view_more_img"
+            android:drawablePadding="5dp"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:text="Password"/>
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#FFFFFF"
+            android:layout_marginBottom="1dp"
+            android:drawableRight="@drawable/view_more_img"
+            android:drawablePadding="5dp"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:text="Privacy Policy"/>
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#FFFFFF"
+            android:layout_marginBottom="1dp"
+            android:drawableRight="@drawable/view_more_img"
+            android:drawablePadding="5dp"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:text="Terms &amp; Conditions"/>
+
+
+    </LinearLayout>
+
+</FrameLayout>

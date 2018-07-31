@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.Home">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/llsearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/etSearch"
+                android:layout_width="310dp"
+                android:layout_height="45dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_et"
+                android:drawableLeft="@drawable/search_img"
+                android:drawablePadding="10dp"
+                android:hint="Search"
+                android:inputType="text"
+                android:paddingLeft="20dp"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llsearch"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:id="@+id/llCategories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"> 
+                
+
+                <Button
+                    android:id="@+id/btnOne"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="341dp"
+                    android:layout_height="142dp"
+                    android:layout_margin="2dp"
+                    android:gravity="center"
+                    android:background="@drawable/home_categories_btn_1"
+                    android:drawableLeft="@drawable/happenings_icon_drawable"
+                    android:paddingLeft="65dp"
+                    android:paddingRight="65dp"
+                    android:text="Happenings around the world"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnTwo"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="341dp"
+                    android:layout_height="142dp"
+                    android:layout_margin="2dp"
+                    android:gravity="center"
+                    android:background="@drawable/home_categories_btn_2"
+                    android:drawableLeft="@drawable/englishphrase_icon_drawable"
+                    android:paddingLeft="65dp"
+                    android:paddingRight="65dp"
+                    android:text="English Phrases"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+
+                <Button
+                    android:id="@+id/btnThree"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="341dp"
+                    android:layout_height="142dp"
+                    android:layout_margin="2dp"
+                    android:gravity="center"
+                    android:background="@drawable/home_categories_btn_3"
+                    android:drawableLeft="@drawable/englishidioms_icon_drawable"
+                    android:paddingLeft="65dp"
+                    android:paddingRight="65dp"
+                    android:text="English Idioms"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnFour"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="341dp"
+                    android:layout_height="142dp"
+                    android:layout_margin="2dp"
+                    android:gravity="center"
+                    android:background="@drawable/home_categories_btn_4"
+                    android:drawableLeft="@drawable/funfacts_icon_drawable"
+                    android:paddingLeft="65dp"
+                    android:paddingRight="65dp"
+                    android:text="Fun Facts"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnFive"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="341dp"
+                    android:layout_height="142dp"
+                    android:layout_margin="2dp"
+                    android:gravity="center"
+                    android:background="@drawable/home_categories_btn_4"
+                    android:drawableLeft="@drawable/category_img"
+                    android:paddingLeft="65dp"
+                    android:paddingRight="65dp"
+                    android:text="Number Five"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnSix"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="341dp"
+                    android:layout_height="142dp"
+                    android:layout_margin="2dp"
+                    android:gravity="center"
+                    android:background="@drawable/home_categories_btn_4"
+                    android:drawableLeft="@drawable/category_img"
+                    android:paddingLeft="65dp"
+                    android:paddingRight="65dp"
+                    android:text="Number Six"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnSeven"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="341dp"
+                    android:layout_height="142dp"
+                    android:layout_margin="2dp"
+                    android:gravity="center"
+                    android:background="@drawable/home_categories_btn_4"
+                    android:drawableLeft="@drawable/category_img"
+                    android:paddingLeft="65dp"
+                    android:paddingRight="65dp"
+                    android:text="Number Seven"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnEight"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="341dp"
+                    android:layout_height="142dp"
+                    android:layout_margin="2dp"
+                    android:gravity="center"
+                    android:background="@drawable/home_categories_btn_4"
+                    android:drawableLeft="@drawable/category_img"
+                    android:paddingLeft="65dp"
+                    android:paddingRight="65dp"
+                    android:text="Number Eight"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnNine"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="341dp"
+                    android:layout_height="142dp"
+                    android:layout_margin="2dp"
+                    android:gravity="center"
+                    android:background="@drawable/home_categories_btn_4"
+                    android:drawableLeft="@drawable/category_img"
+                    android:paddingLeft="65dp"
+                    android:paddingRight="65dp"
+                    android:text="Number Nine"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+                <Button
+                    android:id="@+id/btnEleven"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="341dp"
+                    android:layout_height="142dp"
+                    android:layout_margin="2dp"
+                    android:gravity="center"
+                    android:background="@drawable/home_categories_btn_4"
+                    android:drawableLeft="@drawable/category_img"
+                    android:paddingLeft="65dp"
+                    android:paddingRight="65dp"
+                    android:text="Number Ten"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+                <Button
+                    android:id="@+id/btnTwelve"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="341dp"
+                    android:layout_height="142dp"
+                    android:layout_margin="2dp"
+                    android:gravity="center"
+                    android:background="@drawable/home_categories_btn_4"
+                    android:drawableLeft="@drawable/category_img"
+                    android:paddingLeft="65dp"
+                    android:paddingRight="65dp"
+                    android:text="Number  Twelve"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnThirteen"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="341dp"
+                    android:layout_height="142dp"
+                    android:layout_margin="2dp"
+                    android:gravity="center"
+                    android:background="@drawable/home_categories_btn_4"
+                    android:drawableLeft="@drawable/category_img"
+                    android:paddingLeft="65dp"
+                    android:paddingRight="65dp"
+                    android:text="Number Thirteen"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnFourteen"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="341dp"
+                    android:layout_height="142dp"
+                    android:layout_margin="2dp"
+                    android:gravity="center"
+                    android:background="@drawable/home_categories_btn_4"
+                    android:drawableLeft="@drawable/category_img"
+                    android:paddingLeft="65dp"
+                    android:paddingRight="65dp"
+                    android:text="Number Fourteen"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
+
+    </RelativeLayout>
+
+    <!-- TODO: Update blank fragment layout -->
+
+</FrameLayout>

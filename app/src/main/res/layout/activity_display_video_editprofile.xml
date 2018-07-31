@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_height="match_parent"
+    tools:context=".display_video_editprofile">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:layout_alignParentTop="true"
+                app:navigationIcon="@drawable/arrow_back_icon" />
+
+
+            <ImageView
+                android:id="@+id/splash_id"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="6dp"
+                android:contentDescription="splash image"
+                android:padding="10dp"
+                app:srcCompat="@drawable/signin_logo" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/splash_id"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="330dp"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2">
+
+                    <EditText
+                        android:id="@+id/etFirstName"
+                        android:layout_width="310dp"
+                        android:layout_height="45dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rounded_et"
+                        android:drawableLeft="@drawable/username_icon"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="@font/segoeui"
+                        android:hint="First Name"
+                        android:inputType="text"
+                        android:paddingLeft="20dp"
+                        android:textSize="14dp" />
+
+                    <EditText
+                        android:id="@+id/etLastName"
+                        android:layout_width="310dp"
+                        android:layout_height="45dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rounded_et"
+                        android:fontFamily="@font/segoeui"
+                        android:hint="Last Name"
+                        android:inputType="text"
+                        android:paddingLeft="20dp"
+                        android:textSize="14dp" />
+
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/etUsername"
+                    android:layout_width="310dp"
+                    android:layout_height="45dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/rounded_et"
+                    android:drawableLeft="@drawable/username_icon"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/segoeui"
+                    android:hint="Username"
+                    android:inputType="text"
+                    android:paddingLeft="20dp"
+                    android:textSize="14dp" />
+
+
+
+                <Button
+                    android:id="@+id/btnUpdate"
+                    android:layout_width="150dp"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/rounded_btn"
+                    android:fontFamily="@font/segoeui"
+                    android:text="Update Profile"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#90000000"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:indicatorColor="@color/pawer_red"
+            app:indicatorName="BallSpinFadeLoaderIndicator" />
+    </LinearLayout>
+
+</LinearLayout>

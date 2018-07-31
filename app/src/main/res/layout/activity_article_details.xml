@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".article_details">
+
+    <RelativeLayout
+        android:id="@+id/tool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:layout_alignParentTop="true"
+            app:navigationIcon="@drawable/arrow_back_icon" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:text="Happenings"
+            android:textColor="@color/pawer_red"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+
+
+    <Button
+        android:id="@+id/btnCollectPoints"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center|center_horizontal"
+        android:background="@drawable/rounded_btn_collect_points"
+        android:fontFamily="@font/helvetica"
+        android:textStyle="normal"
+        android:textAllCaps="false"
+        android:text="Collect Points"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/btnCollected"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rounded_btn_points_collected"
+        android:fontFamily="@font/helvetica"
+        android:textStyle="normal"
+        android:textAllCaps="false"
+        android:text="Points Collected"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        android:visibility="gone"/>
+
+</LinearLayout>

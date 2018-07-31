@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_height="match_parent"
+    tools:context=".sign_in">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/splash_id"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_margin="6dp"
+                android:contentDescription="splash image"
+                android:padding="10dp"
+                app:srcCompat="@drawable/signin_logo" />
+
+
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/splash_id"
+                android:gravity="center_horizontal"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/pawer_red"
+                    android:textSize="20sp"
+                    android:gravity="right|end"
+                    android:id="@+id/tvSignIn"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/segoeui"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Sign In" />
+
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:textColor="@color/pawer_grey"
+                    android:textSize="20sp"
+                    android:layout_weight="1"
+                    android:gravity="start|left"
+                    android:id="@+id/tvRegister"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/segoeui"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Register" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:layout_below="@id/splash_id">
+
+
+                <EditText
+                    android:id="@+id/etEmail"
+                    android:layout_width="310dp"
+                    android:layout_height="45dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/rounded_et"
+                    android:drawableLeft="@drawable/username_icon"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/segoeui"
+                    android:hint=" Email"
+                    android:inputType="text|textEmailAddress"
+                    android:paddingLeft="20dp"
+                    android:textSize="14dp" />
+
+                <EditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="310dp"
+                    android:layout_height="45dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/rounded_et"
+                    android:drawableLeft="@drawable/password_icon"
+                    android:drawablePadding="10dp"
+                    android:paddingLeft="10dp"
+                    android:fontFamily="@font/segoeui"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/tvForgotPassword"
+                    android:layout_width="310dp"
+                    android:layout_height="wrap_content"
+                    android:text="Forgot password?"
+                    android:gravity="right"
+                    android:layout_marginTop="15dp"
+                    android:textSize="12dp"
+                    android:textColor="#E54149"
+                    android:visibility="gone"/>
+
+                <Button
+                    android:id="@+id/btnSignIn"
+                    android:layout_width="150dp"
+                    android:layout_height="45dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="30dp"
+                    android:text="Submit"
+                    android:fontFamily="@font/segoeui"
+                    android:background="@drawable/rounded_btn"
+                    android:layout_marginBottom="20dp"
+                    android:textSize="14dp"
+                    android:textColor="#FFFFFF" />
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#90000000"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:visibility="gone"
+            app:indicatorColor="@color/pawer_red"
+            app:indicatorName="BallSpinFadeLoaderIndicator" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/tool"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:layout_alignParentTop="true"/>
+        <ImageView
+            android:id="@+id/home_page_logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="10dp"
+            app:srcCompat="@drawable/title_home" />
+
+        <ImageView
+            android:id="@+id/profile_page_logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="10dp"
+            android:visibility="gone"
+            app:srcCompat="@drawable/title_profile" />
+
+        <ImageView
+            android:id="@+id/edit_profile_page_logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="10dp"
+            android:visibility="gone"
+            app:srcCompat="@drawable/title_edit_profile" />
+
+        <ImageView
+            android:id="@+id/settings_page_logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="10dp"
+            android:visibility="gone"
+            app:srcCompat="@drawable/title_settings" />
+
+        <ImageView
+            android:id="@+id/happenings_page_logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="10dp"
+            android:visibility="gone"
+            app:srcCompat="@drawable/title_happenings" />
+        <!--<TextView-->
+        <!--android:id="@+id/title"-->
+        <!--android:fontFamily="@font/segoeui"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:gravity="center"-->
+        <!--android:textAlignment="center"-->
+        <!--android:textSize="20sp"-->
+        <!--android:text="Home Page"/>-->
+    </RelativeLayout>
+
+    <android.support.v4.widget.DrawerLayout
+        android:layout_width="match_parent"
+        android:id="@+id/drawer_layout"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tool">
+        <include layout="@layout/main_content" />
+
+        <android.support.design.widget.NavigationView
+            style="@style/NavigationViewStyle"
+            android:id="@+id/left_drawer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:headerLayout="@layout/drawer_layout"
+            app:itemTextColor="@color/menu_text_color"
+            app:menu="@menu/navbar_menu">
+
+
+                <Button
+                    android:id="@+id/btnLogout"
+                    android:layout_width="150dp"
+                    android:layout_height="45dp"
+                    android:text="Log Out"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:drawableLeft="@drawable/logout_img"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:layout_marginBottom="100dp"
+                    android:background="@drawable/rounded_btn"
+                    android:fontFamily="@font/segoeui"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14dp"
+                    />
+
+        </android.support.design.widget.NavigationView>
+
+
+    </android.support.v4.widget.DrawerLayout>
+
+
+</RelativeLayout>

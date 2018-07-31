@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_height="match_parent"
+    tools:context=".sign_in">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/splash_id"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="6dp"
+                android:contentDescription="splash image"
+                android:padding="10dp"
+                app:srcCompat="@drawable/signin_logo" />
+
+
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/splash_id"
+                android:gravity="center_horizontal"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/pawer_grey"
+                    android:textSize="20sp"
+                    android:gravity="right|end"
+                    android:id="@+id/tvSignIn"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/segoeui"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Sign In" />
+
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:textColor="@color/pawer_red"
+                    android:textSize="20sp"
+                    android:layout_weight="1"
+                    android:gravity="start|left"
+                    android:id="@+id/tvRegister"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/segoeui"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Register" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/splash_id"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginStart="10dp"
+                    android:weightSum="2">
+
+                    <EditText
+                        android:id="@+id/etFirstName"
+                        android:layout_width="350dp"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rounded_et"
+                        android:drawableLeft="@drawable/username_icon"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="@font/segoeui"
+                        android:hint="First Name"
+                        android:inputType="text"
+                        android:paddingLeft="20dp"
+                        android:textSize="14dp" />
+
+                    <EditText
+                        android:id="@+id/etLastName"
+                        android:layout_width="350dp"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rounded_et"
+                        android:fontFamily="@font/segoeui"
+                        android:hint="Last Name"
+                        android:inputType="text"
+                        android:paddingLeft="20dp"
+                        android:textSize="14dp" />
+
+
+                </LinearLayout>
+
+
+                <EditText
+                    android:id="@+id/etEmail"
+                    android:layout_width="350dp"
+                    android:layout_height="45dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/rounded_et"
+                    android:drawableLeft="@drawable/username_icon"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/segoeui"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="20dp"
+                    android:textSize="14dp" />
+
+                <EditText
+                    android:id="@+id/etUsername"
+                    android:layout_width="350dp"
+                    android:layout_height="45dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/rounded_et"
+                    android:drawableLeft="@drawable/username_icon"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/segoeui"
+                    android:hint="Username"
+                    android:inputType="text"
+                    android:paddingLeft="20dp"
+                    android:textSize="14dp" />
+
+
+                <EditText
+                    android:id="@+id/etDOB"
+                    android:layout_width="350dp"
+                    android:layout_height="45dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/rounded_et"
+                    android:drawableLeft="@drawable/date_icon"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/segoeui"
+                    android:hint="Date Of Birth (DD/MM/YYYY)"
+                    android:inputType="date"
+                    android:paddingLeft="20dp"
+                    android:textSize="14dp"
+                    android:maxLength="10"
+                    android:focusable="false"/>
+
+
+                <EditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="350dp"
+                    android:layout_height="45dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/rounded_et"
+                    android:drawableLeft="@drawable/password_icon"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/segoeui"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:paddingLeft="10dp"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/etConfirmPassword"
+                    android:layout_width="350dp"
+                    android:layout_height="45dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/rounded_et"
+                    android:drawableLeft="@drawable/password_icon"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/segoeui"
+                    android:hint="Confirm Password"
+                    android:inputType="textPassword"
+                    android:paddingLeft="10dp"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:id="@+id/consentLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="50dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <EditText
+                        android:id="@+id/etParentContact"
+                        android:layout_width="350dp"
+                        android:layout_height="45dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/rounded_et"
+                        android:drawableLeft="@drawable/username_icon"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="@font/segoeui"
+                        android:hint="Parent's Contact"
+                        android:inputType="phone"
+                        android:paddingLeft="20dp"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/etParentEmail"
+                        android:layout_width="350dp"
+                        android:layout_height="45dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/rounded_et"
+                        android:drawableLeft="@drawable/username_icon"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="@font/segoeui"
+                        android:hint="Email Address"
+                        android:inputType="textEmailAddress"
+                        android:paddingLeft="20dp"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/etParentName"
+                        android:layout_width="350dp"
+                        android:layout_height="45dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/rounded_et"
+                        android:drawableLeft="@drawable/username_icon"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="@font/segoeui"
+                        android:hint="Parent's Name"
+                        android:inputType="text"
+                        android:paddingLeft="20dp"
+                        android:textSize="14sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:orientation="vertical"
+                    android:gravity="left">
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/checkBoxTermsPolicy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="I have read and agree to the "
+                            android:textSize="14sp"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="20dp">
+
+                        <TextView
+                            android:id="@+id/tvTerms"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:text="Terms of Use"
+                            android:textSize="14sp"
+                            android:textColor="@color/pawer_red"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" and "
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tvPolicy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:text="Privacy Policy"
+                            android:textSize="14sp"
+                            android:textColor="@color/pawer_red"/>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="25dp"
+                    android:orientation="horizontal"
+                    android:gravity="left">
+
+
+                    <CheckBox
+                        android:id="@+id/checkBoxUpdates"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Keep me updated, send me Newsletters"
+                        android:textSize="14sp"/>
+
+
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/btnRegister"
+                    android:layout_width="150dp"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/rounded_btn"
+                    android:fontFamily="@font/segoeui"
+                    android:text="Submit"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#90000000"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:indicatorColor="@color/pawer_red"
+            app:indicatorName="BallSpinFadeLoaderIndicator" />
+    </LinearLayout>
+
+</LinearLayout>
