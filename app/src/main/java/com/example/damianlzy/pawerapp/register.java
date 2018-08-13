@@ -13,11 +13,7 @@ import android.os.AsyncTask;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.text.Editable;
-import android.text.TextUtils;
-import android.text.TextWatcher;
 import android.util.Log;
-import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
@@ -367,10 +363,10 @@ public class register extends AppCompatActivity {
                                 + "&user_username=" + etUsername.getText().toString()
                                 + "&user_email=" + etEmail.getText().toString()
                                 + "&user_dob=" + etDOB.getText().toString()
-                                + "&user_pwd=" + etPassword.getText().toString()
-                                + "&parent_contact=" + " "
-                                + "&parent_address=" + " "
-                                + "&parent_name=" + " ");
+                                + "&user_pwd=" + etPassword.getText().toString());
+//                                + "&parent_contact=" + null
+//                                + "&parent_address=" + null
+//                                + "&parent_name=" + null);
             }
             try{
                 if(results!=null){
@@ -418,7 +414,7 @@ public class register extends AppCompatActivity {
                    Log.i("jsonReturn",result.toString());
                     JSONArray users = result.getJSONArray("users");
                     JSONObject user = users.getJSONObject(0);
-                    if(user.getString("status_id") == "1"){
+                    if(user.getString("status_id").equalsIgnoreCase("2")){
                         editor.putString("user_name", user.getString("user_firstname")+" "+user.getString("user_lastname"));
                         editor.putString("user_firstname", user.getString("user_firstname"));
                         editor.putString("user_lastname", user.getString("user_lastname"));
