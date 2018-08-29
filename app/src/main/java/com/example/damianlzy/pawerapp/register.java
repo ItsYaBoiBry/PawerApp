@@ -79,6 +79,7 @@ public class register extends AppCompatActivity {
 
         consentLayout = findViewById(R.id.consentLayout);
         progressbar = findViewById(R.id.progressbar);
+        progressbar.setVisibility(View.GONE);
 
         cbTermsPolicy = findViewById(R.id.checkBoxTermsPolicy);
         cbUpdates = findViewById(R.id.checkBoxUpdates);
@@ -218,6 +219,7 @@ public class register extends AppCompatActivity {
                                         ShowProgress();
                                         Register doregister = new Register();
                                         doregister.execute(apiLinks.getRegister());
+                                        progressbar.setVisibility(View.VISIBLE);
                                     } else {
                                         Toast.makeText(getApplicationContext(), "Password and Confirm Password does not match", Toast.LENGTH_SHORT).show();
                                     }
@@ -389,6 +391,7 @@ public class register extends AppCompatActivity {
         protected void onPostExecute(String s) {
             super.onPostExecute(s);
             HideProgress();
+            progressbar.setVisibility(View.GONE);
             Log.e("SIGNUP POST EXECUTE: ", ""+s);
             try {
                 JSONObject result = new JSONObject(s);

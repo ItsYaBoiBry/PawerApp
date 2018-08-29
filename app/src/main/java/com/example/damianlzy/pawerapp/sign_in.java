@@ -52,6 +52,7 @@ public class sign_in extends AppCompatActivity {
         etPassword = findViewById(R.id.etPassword);
         btnSubmit = findViewById(R.id.btnSignIn);
         progressbar = findViewById(R.id.progressbar);
+        progressbar.setVisibility(View.GONE);
 
 
         btnSubmit.setOnClickListener(new View.OnClickListener() {
