@@ -1,4 +1,4 @@
-package com.example.damianlzy.pawerapp.Fragments;
+package com.pawerskills.damianlzy.pawerapp.Fragments;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,8 +10,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.example.damianlzy.pawerapp.R;
-import com.example.damianlzy.pawerapp.happenings;
+import com.pawerskills.damianlzy.pawerapp.R;
+import com.pawerskills.damianlzy.pawerapp.happenings;
 
 
 public class Home extends Fragment {

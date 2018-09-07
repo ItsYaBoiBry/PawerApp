@@ -1,4 +1,4 @@
-package com.example.damianlzy.pawerapp.functions;
+package com.pawerskills.damianlzy.pawerapp.functions;
 
 public class API {
     public API() {

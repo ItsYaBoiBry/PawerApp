@@ -1,4 +1,4 @@
-package com.example.damianlzy.pawerapp;
+package com.pawerskills.damianlzy.pawerapp;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-import com.example.damianlzy.pawerapp.functions.DialogMenu;
+import com.pawerskills.damianlzy.pawerapp.functions.DialogMenu;
 
 import java.util.ArrayList;
 

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    tools:context="com.example.damianlzy.pawerapp.splash_screen_white">
+    tools:context="com.pawerskills.damianlzy.pawerapp.splash_screen_white">
 
     <ImageView
         android:id="@+id/splash_id"

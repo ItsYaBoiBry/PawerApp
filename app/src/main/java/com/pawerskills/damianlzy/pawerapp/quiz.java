@@ -1,4 +1,4 @@
-package com.example.damianlzy.pawerapp;
+package com.pawerskills.damianlzy.pawerapp;
 
 import android.content.Intent;
 import android.support.v7.app.AlertDialog;

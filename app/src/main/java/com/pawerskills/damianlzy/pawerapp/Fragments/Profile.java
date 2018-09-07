@@ -1,4 +1,4 @@
-package com.example.damianlzy.pawerapp.Fragments;
+package com.pawerskills.damianlzy.pawerapp.Fragments;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -13,10 +13,10 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
-import com.example.damianlzy.pawerapp.MainActivity;
-import com.example.damianlzy.pawerapp.R;
-import com.example.damianlzy.pawerapp.edit_profile;
-import com.example.damianlzy.pawerapp.sign_in;
+import com.pawerskills.damianlzy.pawerapp.MainActivity;
+import com.pawerskills.damianlzy.pawerapp.R;
+import com.pawerskills.damianlzy.pawerapp.edit_profile;
+import com.pawerskills.damianlzy.pawerapp.sign_in;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
