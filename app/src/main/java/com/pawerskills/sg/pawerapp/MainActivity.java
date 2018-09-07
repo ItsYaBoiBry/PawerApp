@@ -1,4 +1,4 @@
-package com.pawerskills.damianlzy.pawerapp;
+package com.pawerskills.sg.pawerapp;
 
 import android.content.Context;
 import android.content.Intent;
@@ -24,9 +24,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
-import com.pawerskills.damianlzy.pawerapp.Fragments.Home;
-import com.pawerskills.damianlzy.pawerapp.Fragments.Profile;
-import com.pawerskills.damianlzy.pawerapp.Fragments.Settings;
+import com.pawerskills.sg.pawerapp.Fragments.Home;
+import com.pawerskills.sg.pawerapp.Fragments.Profile;
+import com.pawerskills.sg.pawerapp.Fragments.Settings;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 

@@ -1,4 +1,4 @@
-package com.pawerskills.damianlzy.pawerapp.functions;
+package com.pawerskills.sg.pawerapp.functions;
 
 public class API {
     public API() {

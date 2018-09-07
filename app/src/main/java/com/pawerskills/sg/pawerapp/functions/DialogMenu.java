@@ -1,4 +1,4 @@
-package com.pawerskills.damianlzy.pawerapp.functions;
+package com.pawerskills.sg.pawerapp.functions;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -11,7 +11,7 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.pawerskills.damianlzy.pawerapp.R;
+import com.pawerskills.sg.pawerapp.R;
 
 public class DialogMenu implements View.OnClickListener {
     private Dialog dialog;

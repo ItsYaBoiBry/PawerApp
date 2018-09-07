@@ -1,4 +1,4 @@
-package com.pawerskills.damianlzy.pawerapp;
+package com.pawerskills.sg.pawerapp;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

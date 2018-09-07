@@ -1,4 +1,4 @@
-package com.pawerskills.damianlzy.pawerapp.functions;
+package com.pawerskills.sg.pawerapp.functions;
 
 import android.util.Log;
 

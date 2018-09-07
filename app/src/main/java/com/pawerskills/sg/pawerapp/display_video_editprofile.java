@@ -1,4 +1,4 @@
-package com.pawerskills.damianlzy.pawerapp;
+package com.pawerskills.sg.pawerapp;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -19,8 +19,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.support.v7.widget.Toolbar;
 
-import com.pawerskills.damianlzy.pawerapp.functions.API;
-import com.pawerskills.damianlzy.pawerapp.functions.HttpReq;
+import com.pawerskills.sg.pawerapp.functions.API;
+import com.pawerskills.sg.pawerapp.functions.HttpReq;
 
 import org.json.JSONArray;
 import org.json.JSONException;

@@ -1,4 +1,4 @@
-package com.pawerskills.damianlzy.pawerapp;
+package com.pawerskills.sg.pawerapp;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

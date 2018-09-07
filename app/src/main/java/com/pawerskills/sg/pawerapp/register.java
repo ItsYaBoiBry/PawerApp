@@ -1,4 +1,4 @@
-package com.pawerskills.damianlzy.pawerapp;
+package com.pawerskills.sg.pawerapp;
 
 import android.app.DatePickerDialog;
 import android.content.Context;
@@ -24,8 +24,8 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.pawerskills.damianlzy.pawerapp.functions.API;
-import com.pawerskills.damianlzy.pawerapp.functions.HttpReq;
+import com.pawerskills.sg.pawerapp.functions.API;
+import com.pawerskills.sg.pawerapp.functions.HttpReq;
 
 import org.json.JSONArray;
 import org.json.JSONException;

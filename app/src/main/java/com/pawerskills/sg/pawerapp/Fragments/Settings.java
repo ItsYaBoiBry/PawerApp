@@ -1,4 +1,4 @@
-package com.pawerskills.damianlzy.pawerapp.Fragments;
+package com.pawerskills.sg.pawerapp.Fragments;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,7 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.pawerskills.damianlzy.pawerapp.R;
+import com.pawerskills.sg.pawerapp.R;
 
 public class Settings extends Fragment {
 
